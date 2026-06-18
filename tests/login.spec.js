@@ -43,14 +43,14 @@ test.describe('Testes da pagina de login', () => {
       .toHaveAttribute('type', 'password')
   })
 
-  test('Teste de redirecionamento link "ainda não tem conta?" ', async ({ login_Page, page }) => {
-    await login_Page.clicarCriarConta()
+  test('Teste de redirecionamento link "ainda não tem conta?" ', async ({ login_Page, cadastro_Page, page }) => {
+    await login_Page.linkCriarConta.click()
 
     await expect(page)
       .toHaveURL('https://www.automationpratice.com.br/register')
 
     //mudar para o page da página da cadastro
-    await expect(login_Page.tituloFormCadastro)
+    await expect(cadastro_Page.tituloCadastro)
       .toHaveText('Cadastro de usuário')
   })
 })

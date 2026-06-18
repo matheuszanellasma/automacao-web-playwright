@@ -17,7 +17,6 @@ export class Login_Page {
     this.msgSucessoLogin = page.getByRole('heading', { name: 'Login realizado' });
     this.botaoOkSucesso = page.getByRole('button', { name: 'OK' });
     this.msgErroValidacao = page.locator('.invalid_input');
-    this.tituloFormCadastro = page.locator('.account_form > h3');
   }
 
   async acessar_login() {
@@ -31,7 +30,4 @@ export class Login_Page {
     await this.botaoLogin.click();
   }
 
-  async clicarCriarConta() {
-    await this.linkCriarConta.click();
-  }
 }

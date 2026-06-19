@@ -1,41 +1,51 @@
-# 🎭 Automação Web com Playwright
+# 🎭 Automação de API com Playwright
 
 ## 💻 Sobre o projeto
-Este repositório contém um projeto de automação de testes web. O objetivo principal desta suíte de testes é validar de forma automatizada os fluxos essenciais de entrada de usuários na aplicação, garantindo a qualidade das páginas de **Login** e **Cadastro**.
+Este repositório contém o projeto de automação de testes de API para a aplicação **Restful-Booker**, uma API pública de gerenciamento de reservas de hotel. O objetivo deste projeto é garantir a qualidade, estabilidade e o funcionamento correto dos endpoints principais da aplicação.
+
+## 🤖 IA e Automação Eficiente (MCP)
+Neste projeto, integrei o **MCP (Model Context Protocol) do Playwright** com inteligência artificial para otimizar o ciclo de testes:
+- **Criação de Casos de Teste:** Após a criação de duas rotas manualmente, foi utilizada a IA para criar os demais casos utilizando o padrão utilizado nas rotas feitas manualmente. Após a geração dos testes pela IA, os mesmos foram avaliados e refinados se necessário.
 
 ## 🛠️ Tecnologias Utilizadas
 Neste projeto, utilizamos as seguintes ferramentas:
 - **[Node.js](https://nodejs.org/en/)**
 - **[Playwright](https://playwright.dev/)**  
-- **Padrão de Projeto: Page Objects Pattern (PoP)**
+- **Padrão de Projeto: Request Objects / API Client Pattern**
+- **MCP (Model Context Protocol) do Playwright**
 
 ## 🌐 Ambiente de Testes
 
-* **URL da Aplicação:** [QaZando Shop](https://www.automationpratice.com.br/)
+🔗 **Site da API:** [Restful-Booker API Doc](https://restful-booker.herokuapp.com/apidoc/index.html)
 
 ## 📝 Planejamento e Casos de Teste Mapeados
 
-### 🔹 Página de Login
-* **CT1:** Login com credenciais válidas
-* Validação de campos obrigatórios de login usando Matriz de Dados
-    * **CT2:** Login mal sucedido com e-mail sem @
-    * **CT3:** Login mal sucedido com e-mail sem domínio
-    * **CT4:** Login mal sucedido com e-mail em branco
-    * **CT5:** Login mal sucedido com senha em branco
-    * **CT6:** Login mal sucedido com senha curta (menos de 6 caracteres)
-    * **CT7:** Teste de mascaramento e segurança do campo senha
-* **CT8:** Teste de redirecionamento - link "Ainda não tem conta?"
+### - Autenticação
+* **Caso de teste Autenticação 1** – Autenticação com sucesso com credenciais válidas
+* **Caso de teste Autenticação 2** – Validações de campos obrigatórios na autenticação (usando matriz de dados)
 
-### 🔹 Página de Cadastro
-* **CT1:** Cadastro com credenciais válidas
-* Validação de campos obrigatórios de login usando Matriz de Dados
-    * **CT2:** Cadastro mal sucedido com nome em branco
-    * **CT3:** Cadastro mal sucedido com e-mail em branco
-    * **CT4:** Cadastro mal sucedido com senha em branco
-    * **CT5:** Cadastro mal sucedido com senha curta (menos de 6 caracteres)
-    * **CT6:** Cadastro mal sucedido com e-mail sem @
-    * **CT7:** Cadastro mal sucedido com e-mail sem domínio
-* **CT8:** Teste de mascaramento da senha no cadastro
+###  – Buscar reserva
+* **Caso de teste Busca 1** – Busca de reserva com sucesso
+* **Caso de teste Busca 2** – Busca de reserva inexistente
+* **Caso de teste Busca 3** – Busca de reserva passando ID com caracteres especiais
+* **Caso de teste Busca 4** – Busca de reserva passando ID com número inválido (negativo)
+
+###  – Criar reserva
+* **Caso de teste Cadastro 1** – Criar reserva com sucesso
+* **Caso de teste Cadastro 2** – Criar reserva passando payload vazio
+* **Caso de teste Cadastro 3** – Validações de campos e tipos de dados no cadastro (usando matriz de dados)
+
+### - Atualizar reserva completa
+* **Caso de teste Atualização Completa 1** – Atualizar reserva completa com sucesso
+* **Caso de teste Atualização Completa 2** – Tentar atualizar reserva inexistente
+* **Caso de teste Atualização Completa 3** – Tentar atualizar reserva com payload vazio
+* **Caso de teste Atualização Completa 4** – Validar rejeição de atualização sem token válido 
+
+###  – Deletar reserva
+* **Caso de teste Exclusão 1** – Deletar reserva com sucesso
+* **Caso de teste Exclusão 2** – Tentar deletar reserva já excluída
+* **Caso de teste Exclusão 3** – Tentar deletar reserva inexistente
+* **Caso de teste Exclusão 4** – Validar rejeição de exclusão sem token válido
 
   ---
 

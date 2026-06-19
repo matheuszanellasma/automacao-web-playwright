@@ -6,7 +6,7 @@ export class Cadastro_Page {
    */
   constructor(page) {
     this.page = page;
-    this.rota = 'https://www.automationpratice.com.br/register';
+    this.rota = '/register';
 
     this.tituloCadastro = page.locator('.account_form > h3');
     this.campoNome = page.locator('#user');

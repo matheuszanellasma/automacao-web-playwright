@@ -7,7 +7,7 @@ export class Login_Page {
   constructor(page) {
     this.page = page;
     
-    this.rota = 'https://www.automationpratice.com.br/login'
+    this.rota = '/login'
 
     this.inputEmail = page.locator('#user');
     this.inputSenha = page.locator('#password');

@@ -44,6 +44,19 @@ Neste projeto, utilizamos as seguintes ferramentas:
   
   ---
 
+## 🛠️ Como Executar os Testes Localmente
+
+### Pré-requisitos: Node.js (versão 18 ou superior recomendada)
+
+### Passo a Passo (Configuração e Execução)
+```bash
+git clone [https://github.com/matheuszanellasma/automacao-web-playwright.git](https://github.com/matheuszanellasma/automacao-web-playwright.git)
+cd automacao-web-playwright
+npm install
+npx playwright install
+npx playwright test --ui
+```
+
 ## 👤 Autor
 
 * **Matheus Koehler Zanella** - Quality Assurance Engineer

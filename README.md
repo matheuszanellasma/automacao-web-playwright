@@ -50,7 +50,7 @@ Neste projeto, utilizamos as seguintes ferramentas:
 
 ### Passo a Passo (Configuração e Execução)
 ```bash
-git clone [https://github.com/matheuszanellasma/automacao-web-playwright.git](https://github.com/matheuszanellasma/automacao-web-playwright.git)
+git clone https://github.com/matheuszanellasma/automacao-web-playwright.git
 cd automacao-web-playwright
 npm install
 npx playwright install

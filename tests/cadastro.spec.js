@@ -8,7 +8,7 @@ test.describe('Testes da página de cadastro', () => {
     await cadastro_Page.acessar_cadastro()
   });
 
-  test('Cadastro com credenciais válidas', async ({ cadastro_Page, page }) => {
+  test('Cadastro com credenciais válidas @smoke', async ({ cadastro_Page, page }) => {
     await cadastro_Page.cadastrar_usuario();
 
     await expect(cadastro_Page.alerta_sucesso).toContainText('Cadastro realizado');

@@ -10,7 +10,7 @@ test.describe('Testes da pagina de login', () => {
   })
 
 
-  test('Login com credenciais válidas', async ({ login_Page }) => {
+  test('Login com credenciais válidas @smoke', async ({ login_Page }) => {
     await login_Page.logar_usuario()
     await expect(login_Page.msgSucessoLogin).toBeVisible()
 

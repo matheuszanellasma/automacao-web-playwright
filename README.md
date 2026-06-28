@@ -20,7 +20,7 @@ Neste projeto, utilizamos as seguintes ferramentas:
 
 ### 🔹 Página de Login
 
-- **CT1:** Login com credenciais válidas
+- **CT1:** Login com credenciais válidas (smoke)
 - Validação de campos obrigatórios de login usando Matriz de Dados
   - **CT2:** Login mal sucedido com e-mail sem @
   - **CT3:** Login mal sucedido com e-mail sem domínio
@@ -32,7 +32,7 @@ Neste projeto, utilizamos as seguintes ferramentas:
 
 ### 🔹 Página de Cadastro
 
-- **CT1:** Cadastro com credenciais válidas
+- **CT1:** Cadastro com credenciais válidas (smoke)
 - Validação de campos obrigatórios de login usando Matriz de Dados
   - **CT2:** Cadastro mal sucedido com nome em branco
   - **CT3:** Cadastro mal sucedido com e-mail em branco

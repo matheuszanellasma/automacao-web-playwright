@@ -1,3 +1,5 @@
+[![CI](https://github.com/matheuszanellasma/automacao-web-playwright/actions/workflows/push.yml/badge.svg)](https://github.com/matheuszanellasma/automacao-web-playwright/actions)
+
 # 🎭 Automação Web com Playwright
 
 ## 💻 Sobre o projeto
@@ -11,6 +13,7 @@ Neste projeto, utilizamos as seguintes ferramentas:
 - **[Node.js](https://nodejs.org/en/)**
 - **[Playwright](https://playwright.dev/)**
 - **Padrão de Projeto: Page Objects Pattern (PoP)**
+- **Faker.js:** geração dinâmica de dados de teste aumentando a cobertura de variações
 
 ## 🌐 Ambiente de Testes
 
